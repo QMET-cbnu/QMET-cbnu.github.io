@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Ultimate Frisbee - Teams</title>
+	<link rel="stylesheet" href="css/hw1.css">
+</head>
+<body>
+	<header>
+		<h1>Ultimate Frisbee Teams</h1>
+		<nav>
+			<a href="index.html">Home</a>
+			<a href="history.html" class = "active">Teams</a>
+			<a href="history.html">History</a>
+			<a href="http://www.usaultimate.org/index.html" target="_blank">USA Ultimate</a>
+		</nav>
+	</header>
+	<main>
+		<aside class = "left">
+			<a href="https://commons.wikimedia.org/wiki/File%3AUltimate_Frisbee%2C_Jul_2009_-_17.jpg"><img src="https://upload.wikimedia.org/wikipedia/commons/5/5d/Ultimate_Frisbee%2C_Jul_2009_-_19.jpg" alt="Creative Common Ultimate Photo" title="By Ed Yourdon [CC BY-SA 2.0 (http://creativecommons.org/licenses/by-sa/2.0)], via Wikimedia Commons"/> </a>
+
+			<a href="https://commons.wikimedia.org/wiki/File%3AUltimate_Frisbee_Colorado_Cup_2005.jpg"><img alt="Ultimate Frisbee Colorado Cup 2005" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Ultimate_Frisbee_Colorado_Cup_2005.jpg/512px-Ultimate_Frisbee_Colorado_Cup_2005.jpg"/></a>
+
+
+			<a href="https://www.flickr.com/photos/paradisecoastie/15409853738/" title="Ultimate Frisbee"><img src="https://farm4.staticflickr.com/3948/15409853738_7dbfbfbac7_k.jpg"  alt="Ultimate Frisbee"></a>
+		</aside>
+		<section class = "right">
+			<h2>College Teams</h2>
+			<p>This is not meant to be a comprehensive list of all the teams, just a sampling from around the United States.  I focused on the ones that I though had cools names.</p>
+			<table>
+				<tr><th>Team Name</th>
+					<th>Location</th>
+					<th>League Type</th></tr>
+				<tr>
+					<td>Afterburn - Air Force</td>
+					<td>Colorado</td>
+					<td>Men's</td>
+				</tr>
+				<tr>
+					<td>Cold Front (Bates College)</td>
+					<td>Maine</td>
+					<td>Women's</td>
+				</tr>
+				<tr>
+					<td>Disco Inferno (Brown University)</td>
+					<td>Rhode Island</td>
+					<td>Women's</td>
+				</tr>
+				<tr>
+					<td>Bad Habit (Catholic University)</td>
+					<td>Washington DC</td>
+					<td>Men's</td>
+				</tr>
+				<tr>
+					<td>Jive Turkeys (Dickinson College)</td>
+					<td>Pennsylvania</td>
+					<td>Both</td>
+				</tr>
+				<tr>
+					<td>Knights of the Round Disc(Longwood College)</td>
+					<td>Virginia</td>
+					<td>Men's</td>
+				</tr>
+				<tr>
+					<td>Ninjas (University of Minnesota)</td>
+					<td>Minnesota</td>
+					<td>Women's</td>
+				</tr>
+				<tr>
+					<td>Flying Squirrels (Hendrix College)</td>
+					<td>Arizona</td>
+					<td>Men's</td>
+				</tr>
+				<tr>
+					<td>Superfly (Yale)</td>
+					<td>Connecticut</td>
+					<td>Men's</td>
+				</tr>
+				<tr>
+					<td>Flywheel (University of Michigan</td>
+					<td>Michigan</td>
+					<td>Women's</td>
+				</tr>
+			</table>
+		</section>
+	</main>
+</body>
+</html>
+
+
+/* 1) The table should be styled using at least four properties
+
+2) The table headings should have a border, background color, and at least one other image
+
+3) Style the table so that the text in the first column is left-aligned and the text in the other two columns is centered
+
+4) Set the opacity of the table rows to a value between .6 and .8 (make sure it is still visible)
+
+5) Change the opacity of a row when it is hovered over
+
+6) The table elements < td > should be styled using at least four properties */
+
+h1 {
+    color: #ffffff;
+    font-variant: small-caps;
+    padding: 2%;
+}
+
+body {
+	padding: 2%;
+	margin: 2%;
+    font-size: 110%;
+}
+
+header {
+	background: #FFFFFF;
+	background: url('http://intro-webdesign.com/CSS/assignment-2/images/flywheel.jpg') no-repeat;
+    background-size: 110%;
+}
+
+nav a {
+	display: inline-block;
+	margin: 20px;
+	width: 15%;
+	height: 30px;
+	border-radius: 5px;
+	background: #ffffff;
+	opacity: 0.3;
+	text-align: center;
+	padding: 10px 5px;
+	text-decoration: none;
+	font-variant: small-caps; 
+}
+
+.active {
+	opacity: 1;
+}
+
+img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	width: 150px;
+	border: 2px solid black;
+}
+
+.left {
+	background: #b3b3b3;
+	display: inline-block;
+    float: left;
+	width: 20%;
+}
+
+.right {
+	padding-left: 1%;
+	display: inline-block;
+    float: right;
+	width: 77%;
+	margin-top: 10px;
+    padding-right: 2%
+}
+
+/* Table Styling */
+table {
+    padding: 2%;
+    margin: 0 auto;
+    line-height: 50px;
+    width: 65%;
+    padding-bottom: 5%;
+}
+
+/* Table Header Styling */
+th {
+    background-color: 	#9ACD32;
+    padding: 2%;
+    font-variant: small-caps;
+    font-size: 100%;
+    color: #ffffff;
+    line-height: 40px;
+    border-radius: 10px 10px 0 0;
+    border-bottom: 2px solid #339933;
+}
+
+/*Make the table text in two columns to the right centered*/
+th, tr td {
+    text-align: center;
+}
+
+/*Make the table text in the column to the left left-aligned*/
+th:first-child, tr td:first-child {
+    text-align: left;
+}
+
+/* Set opacity of table rows*/
+tr td {
+    opacity: 0.6;
+}
+
+
+/*Change opacity of table rows when hovered over*/
+tr:hover td {
+    opacity: 1;
+    color: #339933;
+    font-weight: bold;
+    font-size:100%;
+    line-height: 60px;
+}
+
+/*Styling the table cells*/
+td {
+    background-color: #90EE90;
+    padding-left: 2%;
+    padding-right: 2%;
+    font-size: 90%;
+    border-bottom: 2px solid #ffffff;
+}
+
