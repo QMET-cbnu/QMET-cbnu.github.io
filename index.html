@@ -46,15 +46,26 @@
         gap: 1rem;
     }
 
-    .logo {
-        font-family: 'Zilla Slab', serif;
-        font-size: 1.5rem;
-        font-weight: 400;
-        color: #2c3e50;
-        display: flex;
-        align-items: center;
-        gap: 0.75rem;
-    }
+.logo {
+    font-family: 'Zilla Slab', serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #2c3e50;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    text-decoration: none; /* 밑줄 제거 */
+    transition: color 0.3s ease; /* 호버 효과를 위한 전환 */
+}
+
+.logo:hover {
+    color: #e74c3c; /* 호버 시 색상 변경 */
+}
+
+.logo:visited {
+    color: #2c3e50; /* 방문한 링크도 원래 색상 유지 */
+}
+
 
     .nav-links {
         display: flex;
@@ -94,7 +105,7 @@
     .hero-content { max-width: 1200px; z-index: 1; padding: 0 2rem; }
     .hero h1 {
         font-family: 'Zilla Slab', serif;
-        font-size: clamp(2.5rem, 10vw, 5rem);
+        font-size: clamp(2rem, 10vw, 3.6rem);
         font-weight: 500;
         margin-bottom: 1.5rem;
         opacity: 0;
@@ -273,7 +284,8 @@
 </style>
 </head> <body> <!-- Header --> <header> <nav> <!-- 햄버거 버튼: 모바일에서 표시 --> <button class="hamburger" id="hamburger" aria-label="메뉴 열기" aria-controls="mobile-drawer" aria-expanded="false"> <span></span> </button>
   
-          <div class="logo">QMET</div>
+          <a href="https://qmet-cbnu.github.io" class="logo">QMET</a>
+
 
         <ul class="nav-links">
             <li><a href="#professor">Professor</a></li>
@@ -314,7 +326,7 @@
         </div>
 
         <p class="hero-description">
-            양자센싱, 양자컴퓨팅을 주도하는 충북대학교 물리학과 연구실
+            IQM Spark부터 광펌핑 원자자력계까지, 양자학도들의 꿈이 현실이 되는 공간
         </p>
 
         <a href="#features" class="cta-button">Learn More</a>
