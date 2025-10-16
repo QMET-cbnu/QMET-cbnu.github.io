@@ -5,6 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>QMET - Quantum Metrology Laboratory</title>
     <link rel="stylesheet" href="ultimate-complete-styles.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/fontsource/fonts/bbh-sans-bartle@latest/latin-400-normal.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
+
     <style>
         /* 추가 스타일 - SVG 아이콘이 보이지 않는 문제 해결 */
         .feature-icon {
@@ -24,10 +32,12 @@
             color: white;
         }
         
-        .feature-card:nth-child(1) .feature-icon::before { content: "🔐"; }
-        .feature-card:nth-child(2) .feature-icon::before { content: "⚡"; }
-        .feature-card:nth-child(3) .feature-icon::before { content: "🔗"; }
-        .feature-card:nth-child(4) .feature-icon::before { content: "🎙️"; }
+        .feature-card:nth-child(1) .feature-icon::before { content: "💻"; }
+        .feature-card:nth-child(2) .feature-icon::before { content: "💎"; }
+        .feature-card:nth-child(3) .feature-icon::before { content: "🫀"; }
+        .feature-card:nth-child(4) .feature-icon::before { content: "🩻"; }
+      .feature-card:nth-child(5) .feature-icon::before { content: "📷"; }
+      .feature-card:nth-child(6) .feature-icon::before { content: "🧠"; }
         
         /* 이미지 fallback */
         .quote-image {
@@ -55,7 +65,7 @@
             <!-- 로고 -->
             <div class="logo-section">
                 <a href="./" class="logo-link">
-                    <span class="logo-icon">⚛️</span>
+                    <div style="width: 22px; height: 22px; background-color: #008FFF; border-radius: 4px; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; font-size: 12px;">Q</div>
                     <span class="logo-text">QMET</span>
                 </a>
             </div>
@@ -65,11 +75,12 @@
                 <a href="https://demo.QMETml.com/" target="_blank" class="nav-link">Professor</a>
                 <a href="./about" class="nav-link">Member</a>
                 <a href="./careers" class="nav-link">Publication</a>
+              <a href="./careers" class="nav-link">Activity</a>
             </div>
             
             <!-- CTA 버튼들 -->
             <div class="nav-cta">
-                <a href="https://console.QMETml.com/" target="_blank" class="btn btn--outline">Activity</a>
+                
                 <a href="./contact" class="btn btn--primary">Contact</a>
             </div>
             
@@ -382,7 +393,7 @@
         <section class="customer-spotlight-section">
             <div class="container">
                 <div class="section-header">
-                    <h2>Customer spotlight</h2>
+                    <h2>Number of Member</h2>
                 </div>
                 
                 <div class="customer-card">
@@ -393,18 +404,18 @@
                         
                         <div class="stats-grid">
                             <div class="stat-item">
-                                <div class="stat-value">$323K</div>
-                                <div class="stat-label">in deposits.</div>
+                                <div class="stat-value">3</div>
+                                <div class="stat-label">Undergraduate Student</div>
                             </div>
                             
                             <div class="stat-item">
-                                <div class="stat-value">16,133 calls</div>
-                                <div class="stat-label">with 35% pickup rate.</div>
+                                <div class="stat-value">4</div>
+                                <div class="stat-label">Master's Student</div>
                             </div>
                             
                             <div class="stat-item">
-                                <div class="stat-value">90%</div>
-                                <div class="stat-label">deflection rate.</div>
+                                <div class="stat-value">1</div>
+                                <div class="stat-label">Ph.D Student</div>
                             </div>
                         </div>
                     </a>
@@ -417,13 +428,13 @@
             <div class="container">
                 <div class="case-study-card">
                     <div class="case-study-image">
-                        <img src="./images/hero.jpg" alt="aerial photo of city highway surrounded by high-rise buildings">
+                        <img src="./images/hero.jpg" alt="무슨 사진을 넣지">
                         <div class="image-overlay"></div>
                     </div>
                     
                     <div class="case-study-content">
                         <div class="case-study-text">
-                            <h2>How Capital.com scaled customer engagement with QMET</h2>
+                            <h2>수많은 연구들의 향연</h2>
                             <a href="./capital-com" class="btn btn-secondary">Read full case study</a>
                         </div>
                         
@@ -433,12 +444,12 @@
                                     <img src="./images/author-avatar.jpg" alt="Christopher Demetriou">
                                 </div>
                                 <div class="author-info">
-                                    <p class="author-name">Christopher Demetriou,</p>
-                                    <p class="author-title">Head of Sales (MENA Region)</p>
+                                    <p class="author-name">Kiwoong Kim,</p>
+                                    <p class="author-title">Professor</p>
                                 </div>
                             </div>
                             <blockquote class="testimonial-quote">
-                                [translate:"Classical 보다는 Quantum이죠^^"]
+                                뭐라 적지
                             </blockquote>
                         </div>
                     </div>
@@ -450,7 +461,7 @@
         <section class="features-section">
             <div class="container">
                 <div class="section-header">
-                    <h2>Unlock Quantum metrology laboratory</h2>
+                    <h2>Research subject</h2>
                     <p>Discover what makes QMET Laboratory unique in quantum metrology research</p>
                 </div>
                 
@@ -458,32 +469,48 @@
                     <div class="feature-card">
                         <div class="feature-icon"></div>
                         <div class="feature-content">
-                            <h3>Enterprise-grade Security</h3>
-                            <p>SOC 2, HIPAA, GDPR, and ISO 27001 compliance with encryption, policy controls, and real-time safeguards.</p>
+                            <h3>Quantum Computing</h3>
+                            <p>Full Stack IQM Spark 5-qubit superconducting quantum computer</p>
                         </div>
                     </div>
 
                     <div class="feature-card">
                         <div class="feature-icon"></div>
                         <div class="feature-content">
-                            <h3>Ultra-low Latency Performance</h3>
-                            <p>Sub-second responses for natural, real-time conversations at scale.</p>
+                            <h3>NV-Center</h3>
+                            <p>Nitrogen-Vacancy Center</p>
                         </div>
                     </div>
 
                     <div class="feature-card">
                         <div class="feature-icon"></div>
                         <div class="feature-content">
-                            <h3>Seamless Integrations</h3>
-                            <p>Plug into CRMs, support platforms, telephony, and custom APIs for instant deployment.</p>
+                            <h3>Rydberg Sensor</h3>
+                            <p>Rydberg Electromagnetically Induced Transparency Electric-Field Sensing</p>
+                        </div>
+                    </div>
+                  
+                  <div class="feature-card">
+                        <div class="feature-icon"></div>
+                        <div class="feature-content">
+                            <h3>Quantum Annealing</h3>
+                            <p>CT compressed sensing, RSA, HUBO</p>
+                        </div>
+                    </div>
+                  
+                  <div class="feature-card">
+                        <div class="feature-icon"></div>
+                        <div class="feature-content">
+                            <h3>Mirror 5-axis align</h3>
+                            <p>X, Y, Z, theta_x, theta_y align algorithm</p>
                         </div>
                     </div>
 
                     <div class="feature-card">
                         <div class="feature-icon"></div>
                         <div class="feature-content">
-                            <h3>Human-like Voice</h3>
-                            <p>Natural prosody, multilingual fluency, and adaptive tone that fit your brand.</p>
+                            <h3>OPM</h3>
+                            <p>Optical Pumping Magnetometer</p>
                         </div>
                     </div>
                 </div>
@@ -495,17 +522,17 @@
             <div class="container">
                 <div class="quote-content">
                     <div class="quote-image">
-                        QMET
+                        Professor image
                     </div>
                     <div class="quote-text">
                         <blockquote>
-                            <p>"QMET is the next AI rocketship… They're building SOTA customer support agents that have 100% win-rate against all other AI customer support products for Fortune 500"</p>
+                            <p>"Basic science is the fine art of discovery"</p>
                         </blockquote>
                         <div class="quote-author">
-                            <div style="width: 47px; height: 47px; border-radius: 50%; background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); display: flex; align-items: center; justify-content: center; color: white; font-weight: bold;">GT</div>
+                            <div style="width: 40px; height: 40px; border-radius: 40%; background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); display: flex; align-items: center; justify-content: center; color: white; font-weight: bold;">PM</div>
                             <div class="author-info">
-                                <h4>Garry Tan</h4>
-                                <p>President at Y Combinator</p>
+                                <h4>Kiwoong Kim</h4>
+                                <p>Professor</p>
                             </div>
                         </div>
                     </div>
@@ -516,7 +543,7 @@
         <!-- CTA 섹션 -->
         <section class="cta-section">
             <div class="container">
-                <h2>Let's Build Your Next Agent</h2>
+                <h2>Let's Build Your Quantum Technology</h2>
                 <a href="#contact" class="btn btn-primary">Contact Us</a>
             </div>
         </section>
@@ -539,26 +566,20 @@
                         <ul>
                             <li><a href="./professor">Professor</a></li>
                             <li><a href="./members">Members</a></li>
+                          <li><a href="./publications">Papers</a></li>
                         </ul>
                     </div>
                     
                     <div class="link-group">
-                        <h4>Publications</h4>
+                        <h4>Extra</h4>
                         <ul>
-                            <li><a href="./publications">Recent Papers</a></li>
-                            <li><a href="./activity">Research Activity</a></li>
+                            
+                            <li><a href="./activity">Activity</a></li>
                             <li><a href="./contact">Contact</a></li>
                         </ul>
                     </div>
                     
-                    <div class="link-group">
-                        <h4>Resources</h4>
-                        <ul>
-                            <li><a href="./lab-equipment">Lab Equipment</a></li>
-                            <li><a href="./privacy-policy">Privacy Policy</a></li>
-                            <li><a href="./terms-of-service">Terms Of Service</a></li>
-                        </ul>
-                    </div>
+                    
                 </div>
             </div>
             <div class="footer-bottom">
