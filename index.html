@@ -12,6 +12,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
 
     <style>
         /* 추가 스타일 - SVG 아이콘이 보이지 않는 문제 해결 */
@@ -56,6 +57,33 @@
             padding: 4px;
             color: white;
         }
+      /* ★ 히어로 콘텐츠를 화면 전체 높이로 설정 ★ */
+    .hero-content {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start; /* 위쪽 정렬로 변경 */
+        align-items: center;
+        text-align: center;
+        padding-top: calc(30vh); /* h1이 중앙에 오도록 상단 여백 조정 */
+        padding-bottom: var(--space-32);
+        padding-left: var(--space-20);
+        padding-right: var(--space-20);
+    }
+    
+    .status-badge {
+        margin-bottom: var(--space-12);
+    }
+    
+    .hero-content h1 {
+        margin: 0;
+    }
+    
+    .hero-subtitle {
+        margin-top: var(--space-16);
+        margin-bottom: var(--space-20);
+    }
+      
     </style>
 </head>
 <body>
@@ -76,13 +104,14 @@
                 <a href="./about" class="nav-link">Member</a>
                 <a href="./careers" class="nav-link">Publication</a>
               <a href="./careers" class="nav-link">Activity</a>
+              <a href="./careers" class="nav-link">Contact</a>
             </div>
             
             <!-- CTA 버튼들 -->
-            <div class="nav-cta">
+            <!-- <div class="nav-cta">
                 
                 <a href="./contact" class="btn btn--primary">Contact</a>
-            </div>
+            </div> -->
             
             <!-- 모바일 햄버거 메뉴 -->
             <div class="hamburger-menu" tabindex="0">
@@ -97,7 +126,11 @@
         <!-- 히어로 섹션 -->
         <section class="hero-section">
             <div class="container">
-                <!-- 상태 표시기 -->
+                
+                
+                <!-- 히어로 텍스트 -->
+                <div class="hero-content">
+                  <!-- 상태 표시기 -->
                 <div class="status-badge">
                     <div class="pulser">
                         <div class="pulsing"></div>
@@ -105,18 +138,15 @@
                     </div>
                     <span>QMET is now Legend</span>
                     <span class="arrow">→</span>
-                </div>
-                
-                <!-- 히어로 텍스트 -->
-                <div class="hero-content">
-                    <h1>Quantum Metrology Laboratory</h1>
+                </div>  
+                  <h1>Quantum Metrology Laboratory</h1>
                     <p class="hero-subtitle">For the student, for the quantum man</p>
                     <a href="./contact" class="btn btn-primary">Contact</a>
                 </div>
                 
                 <!-- 히어로 이미지 -->
                 <div class="hero-image">
-                    <img src="./images/hero.jpg" alt="Quantum Laboratory">
+                    <img src="https://github.com/QMET-cbnu/QMET-cbnu.github.io/blob/main/Lab_photo_1.jpg?raw=true" alt="Quantum Laboratory">
                     
                     <!-- 오버레이 채팅 -->
                     <div class="chat-overlay">
@@ -521,9 +551,11 @@
         <section class="quote-section">
             <div class="container">
                 <div class="quote-content">
-                    <div class="quote-image">
-                        Professor image
-                    </div>
+              
+                    <!-- ★ <div>를 <img>로 변경 ★ -->
+            <img class="quote-image" src="https://raw.githubusercontent.com/QMET-cbnu/QMET-cbnu.github.io/main/professor_photo.jpg" alt="Professor Photo">
+            
+                    
                     <div class="quote-text">
                         <blockquote>
                             <p>"Basic science is the fine art of discovery"</p>
